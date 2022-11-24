@@ -96,7 +96,7 @@
         <div class="container">
           <div class="contain">
             <h1>
-              استرجاع كلمة المرور
+              تعديل معلوماتي
             </h1>
 
             <p>
@@ -109,14 +109,90 @@
       <section class="login general-section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7 col-12 mx-auto">
+            <div class="col-lg-8 mx-auto">
               <div class="contain">
-                <div class="row">
-                  <div class="col-12">
+                <ul class="nav" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                      <span>
+                        تعديل بيانات حسابك
+                      </span>
+                    </a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                      <span>
+                        تعديل كلمة المرور
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <form action="" class="form-content">
                       <div class="form-group">
                         <label for="">
-                          كلمة المرور الجديدة
+                          الاسم
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="الاسم" />
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">
+                          البريد الإلكتروني
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="info@gmail.com" />
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">
+                          رقم الجوال
+                        </label>
+    
+                        <input type="text" class="form-control" placeholder="رقم الجوال" />
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">
+                          المدينة
+                        </label>
+    
+                        <div class="data-select">
+                          <select name="" class="form-control" id="">
+                            <option value="">
+                              إختر المدينة
+                            </option>
+    
+                            <option value="">
+                              إختر المدينة
+                            </option>
+    
+                            <option value="">
+                              إختر المدينة
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+    
+                      <a href="#" class="custom-btn bk-btn" type="button" data-toggle="modal" data-target="#acceptModal">
+                        <img src="assets/images/icons/left-arrow.svg" loading="lazy" alt="" />
+    
+                        <span>
+                          حفظ
+                        </span>
+                      </a>
+                    </form>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <form action="" class="form-content">
+                      <div class="form-group">
+                        <label for="">
+                          كلمة المرور القديمة
                         </label>
     
                         <div class="form-data show_hide_password">
@@ -128,10 +204,25 @@
                           </a>
                         </div>
                       </div>
-                      
-                      <div class="form-group mb-4">
+
+                      <div class="form-group">
                         <label for="">
-                          تأكيد كلمة المرور الجديدة
+                          كلمة المرور الجديده
+                        </label>
+    
+                        <div class="form-data show_hide_password">
+                          <input type="password" class="form-control shadow_input" placeholder="أدخل كلمة المرور" />
+                          
+                          <a href="#" class="show-pass">
+                            <img src="assets/images/form/eye.svg" class="icon" loading="lazy" alt="" />
+                            <img src="assets/images/form/slash-eye.svg" class="slash-icon" loading="lazy" alt="">
+                          </a>
+                        </div>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">
+                          تأكيد كلمة المرور
                         </label>
     
                         <div class="form-data show_hide_password">
@@ -148,7 +239,7 @@
                         <img src="assets/images/icons/left-arrow.svg" loading="lazy" alt="" />
     
                         <span>
-                          تأكيد
+                          حفظ
                         </span>
                       </a>
                     </form>
@@ -157,28 +248,9 @@
               </div>
             </div>
           </div>
-          
         </div>
       </section>
     </main>
-
-    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="contain">
-              <div class="image-content">
-                <img src="assets/images/form/check_circle.svg" loading="lazy" alt="" />
-              </div>
-
-              <p>
-                تم إسترجاع كلمة المرور بنجاح
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <footer>
       <div class="container">
@@ -377,6 +449,24 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="contain">
+              <div class="image-content">
+                <img src="assets/images/form/check_circle.svg" loading="lazy" alt="" />
+              </div>
+
+              <p>
+                تم تحديث المعلومات بنجاح
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/js/lib/jquery4.js"></script>
     <script src="assets/js/lib/jquery-ui.min.js"></script>

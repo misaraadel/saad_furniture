@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="min" transform="translate(-992 -626)">
+    <g id="minus-cirlce_bold" data-name="minus-cirlce/bold" transform="translate(992 626)">
+      <g id="vuesax_bold_minus-cirlce" data-name="vuesax/bold/minus-cirlce">
+        <g id="minus-cirlce">
+          <path id="Vector" d="M12.5,0A12.5,12.5,0,1,0,25,12.5,12.521,12.521,0,0,0,12.5,0Zm4.9,13.438H7.4a.938.938,0,0,1,0-1.875h10a.938.938,0,0,1,0,1.875Z" transform="translate(2.5 2.5)" fill="#c57c35"/>
+          <path id="Vector-2" data-name="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

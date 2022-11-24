@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="add" transform="translate(-1039.726 -622.726)">
+    <g id="add-circle_bold" data-name="add-circle/bold" transform="translate(1039.726 622.726)">
+      <g id="vuesax_bold_add-circle" data-name="vuesax/bold/add-circle" transform="translate(0 0)">
+        <g id="add-circle">
+          <path id="Vector" d="M12.523,0A12.523,12.523,0,1,0,25.046,12.523,12.543,12.543,0,0,0,12.523,0Zm5.009,13.462h-4.07v4.07a.939.939,0,1,1-1.878,0v-4.07H7.514a.939.939,0,1,1,0-1.878h4.07V7.514a.939.939,0,1,1,1.878,0v4.07h4.07a.939.939,0,1,1,0,1.878Z" transform="translate(2.477 2.477)" fill="#c57c35"/>
+          <path id="Vector-2" data-name="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -117,6 +117,36 @@ $(document).ready(function () {
     },
   });
 
+  var swiper = new Swiper(".prodcutDetailsThumbsSlider", {
+    spaceBetween: 10,
+    
+    freeMode: true,
+    watchSlidesProgress: true,
+    loop: true,
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0:{
+        slidesPerView: 3,
+      },
+      700:{
+        slidesPerView: 3,
+      },
+      1050:{
+        slidesPerView: 4,
+      }
+    }
+  });
+  var swiper2 = new Swiper(".prodcutDetailsSwiper", {
+    spaceBetween: 10,
+    loop: true,
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
   $(".show_hide_password .show-pass").on('click', function(event) {
     event.preventDefault();
     if($(this).siblings("input").attr("type") == "text"){
