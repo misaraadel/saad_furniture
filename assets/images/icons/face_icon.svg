@@ -1,0 +1,6 @@
+<svg id="face_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="50" height="50" fill="#1773ea"/>
+  <g id="Group_4451" data-name="Group 4451" transform="translate(20 15)">
+    <path id="facebook" d="M32.9,11.25l.555-3.62H29.982V5.282a1.81,1.81,0,0,1,2.041-1.955H33.6V.245A19.255,19.255,0,0,0,30.8,0c-2.86,0-4.73,1.734-4.73,4.872V7.63H22.89v3.62h3.179V20h3.913V11.25Z" transform="translate(-22.89)" fill="#fff"/>
+  </g>
+</svg>

@@ -80,6 +80,7 @@ $(document).ready(function () {
 
   var swiper = new Swiper(".swiper-header", {
     loop: true,
+    effect: "fade",
     autoplay: {
       delay: 8000,
       disableOnInteraction: false,

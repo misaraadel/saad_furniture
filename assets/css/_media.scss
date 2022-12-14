@@ -62,6 +62,22 @@
         right: 0px;
       }
     }
+
+    .search-box {
+      .category {
+        width: 60px;
+
+        .category-contain {
+          &::after, span {
+            display: none;
+          }
+        }
+      }
+
+      .form-contain {
+        width: calc(100% - 60px);
+      }
+    }
   }
 
   header {
@@ -81,8 +97,8 @@
       }
     }
 
-    .image-content {
-      height: 300px !important;
+    .swiper-slide {
+      padding: 50px 30px;
     }
   }
 
@@ -162,6 +178,10 @@
 
     .footer-padding {
       padding: 0px !important;
+      
+      &::after {
+       display: none;
+      }
     }
 
     .coprights {
@@ -405,5 +425,58 @@
 
   .login .contain .flex-data {
     margin-bottom: 20px !important;
+  }
+
+  .login .share-account {
+    padding: 20px 10px 0px;
+
+    .box {
+      padding: 20px 0px;
+
+
+    }
+  }
+
+  .address {
+    padding-bottom: 40px;
+
+    .heading-address {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      margin-bottom: 30px;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .address-box {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+
+      .contain {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .navbar .contain .button-contain .profile-popup .custom-btn::after {
+    display: none;
+  }
+
+  .share-section {
+    flex-direction: column;
+    padding: 15px 10px;
+
+    p {
+      margin-bottom: 20px !important;
+      text-align: center;
+      margin-inline-end: 0px !important;
+    }
   }
 }

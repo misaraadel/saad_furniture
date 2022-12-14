@@ -57,7 +57,7 @@
 
             <li class="nav-item">
               <a href="news.html" class="nav-link">
-                الأخبار
+                المدونة
               </a>
             </li>
 
@@ -79,13 +79,65 @@
               <img src="assets/images/icons/cart.svg" class="cart-icon" loading="lazy" alt="" />
             </a>
 
-            <a href="login.html" class="custom-btn bk-btn">
-              <img src="assets/images/form/user.svg" loading="lazy" alt="" />
-              
-              <span>
-                حسابي 
-              </span>
-            </a>
+            <div class="profile-popup">
+              <a href="#" class="custom-btn bk-btn">
+                <img src="assets/images/form/user.svg" loading="lazy" alt="" />
+                
+                <span>
+                  حسابي 
+                </span>
+              </a>
+
+              <ul class="list">
+                <li>
+                  <a href="orders.html">
+                    <img src="assets/images/icons/user.svg" loading="lazy" alt="" />
+
+                    <span>
+                      تعديل معلوماتي
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="orders.html">
+                    <img src="assets/images/icons/order.svg" loading="lazy" alt="" />
+
+                    <span>
+                      طلباتي
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="address.html">
+                    <img src="assets/images/icons/address.svg" loading="lazy" alt="" />
+
+                    <span>
+                      عناويني
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="favorite.html">
+                    <img src="assets/images/icons/favorite.svg" loading="lazy" alt="" />
+
+                    <span>
+                      المفضلة
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="logout-btn">
+                    <span>
+                      تسجيل خروج
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -222,43 +274,159 @@
         </div>
       </section>
 
-      <section class="visions general-section">
+      <section class="about-us visions general-section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-12 mb-4">
-              <div class="box secondary">
-                <div class="image-content">
-                  <img src="assets/images/about/vision.svg" loading="lazy" alt="" />
-                </div>
-
-                <div class="contain">
+            <div class="col-lg-4 col-12 mb-3 px-2">
+              <div class="about-contain">
+                <div class="heading">
                   <h1>
-                    رؤيتنا
+                    عن الشركة
                   </h1>
 
                   <p>
-                    العمل على تأسيس علامة تجارية فريدة لمستلزمات الإضاءة
-                    والإكسسوارات المنزلية والأنتيكات لتضفي تأثير مميز
-                    داخل المنزل
+                    معرض الشيخ سعد اسم له تاريخ في إنتاج
+                    وتوفير مستلزمات اإلضاءة والديكور
+                    المنزلي والتجاري الحديث
                   </p>
                 </div>
               </div>
             </div>
+            
+            <div class="col-lg-8 col-12 px-2 mb-3">
+              <ul class="nav" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                    <span>
+                      التعريف بنا
+                    </span>
+                  </a>
+                </li>
 
-            <div class="col-lg-6 col-12 mb-4">
-              <div class="box primary">
-                <div class="image-content">
-                  <img src="assets/images/about/vision.svg" loading="lazy" alt="" />
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    <span>
+                      رؤيتنا
+                    </span>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    <span>
+                      مهمتنا
+                    </span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="contain">
+                    <p>
+                      معرض الشيخ سعد اسم له تاريخ في إنتاج وت وفير مستلزمات اإلضاءة والديكور المنزلي والتجاري الحديث إذا كنت تبحث عن تصميمات إضاءة وإكسسوارات كالسيكية أو حديثة لتضفي لمسة رائعة لدى مساحتك الخاصة، فالجود ة الفريدة بانتظارك لدينا في معرض الشيخ سعد لإلكسسوارات واألنتيكات للمنزل الحديث
+                    </p>
+
+                    <ul class="list">
+                      <li>
+                        أباجورات لكل ركن بالمنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+                      
+                      <li>
+                        نجف حديث و كالسيك
+                      </li>
+
+                      <li>
+                        أنتيكات نحاس
+                      </li>
+                    </ul>
+
+                    <a href="about-us.html" class="custom-btn border-btn">
+                      <span>
+                        المزيد عنا
+                      </span>
+                    </a>
+                  </div>
                 </div>
 
-                <div class="contain">
-                  <h1>
-                    مهمتنا
-                  </h1>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="contain">
+                    <p>
+                      معرض الشيخ سعد اسم له تاريخ في إنتاج وت وفير مستلزمات اإلضاءة والديكور المنزلي والتجاري الحديث إذا كنت تبحث عن تصميمات إضاءة وإكسسوارات كالسيكية أو حديثة لتضفي لمسة رائعة لدى مساحتك الخاصة، فالجود ة الفريدة بانتظارك لدينا في معرض الشيخ سعد لإلكسسوارات واألنتيكات للمنزل الحديث
+                    </p>
 
-                  <p>
-                    التوسع داخل السوق المصري بجودة غير تقليدية، والعمل على خلق منظور جديد لديكورات المنزل الحديث
-                  </p>
+                    <ul class="list">
+                      <li>
+                        أباجورات لكل ركن بالمنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+
+                      <li>
+                        نجف حديث و كالسيك
+                      </li>
+
+                      <li>
+                        أنتيكات نحاس
+                      </li>
+                    </ul>
+
+                    <a href="about-us.html" class="custom-btn border-btn">
+                      <span>
+                        المزيد عنا
+                      </span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="contain">
+                    <p>
+                      معرض الشيخ سعد اسم له تاريخ في إنتاج وت وفير مستلزمات اإلضاءة والديكور المنزلي والتجاري الحديث إذا كنت تبحث عن تصميمات إضاءة وإكسسوارات كالسيكية أو حديثة لتضفي لمسة رائعة لدى مساحتك الخاصة، فالجود ة الفريدة بانتظارك لدينا في معرض الشيخ سعد لإلكسسوارات واألنتيكات للمنزل الحديث
+                    </p>
+
+                    <ul class="list">
+                      <li>
+                        أباجورات لكل ركن بالمنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+
+                      <li>
+                        إكسسوارت لديكور المنزل
+                      </li>
+                      
+                      <li>
+                        نجف حديث و كالسيك
+                      </li>
+
+                      <li>
+                        أنتيكات نحاس
+                      </li>
+                    </ul>
+
+                    <a href="about-us.html" class="custom-btn border-btn">
+                      <span>
+                        المزيد عنا
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -343,7 +511,7 @@
 
                 <li>
                   <a href="news.html">
-                    الأخبار
+                    المدونة
                   </a>
                 </li>
 
