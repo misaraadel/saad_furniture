@@ -38,6 +38,7 @@
       position: absolute;
       top: 110px;
       right: -100%;
+      overflow-y: scroll;
       z-index: 99;
       background-color: var(--primary-color);
       flex-direction: column !important;
@@ -47,10 +48,17 @@
       padding: 20px 10px;
       transition: all .3s linear;
 
-      li {
-        margin-bottom: 20px;
+      &::-webkit-scrollbar-track {
+        background: transparent !important;
+      }
 
-        a {
+      .nav-item {
+        margin-bottom: 20px;
+        width: 100%;
+        
+        .nav-link  {
+          width: 100%;
+          
           &::after {
             right: 0px;
             left: unset !important;

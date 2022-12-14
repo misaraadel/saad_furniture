@@ -1528,6 +1528,9 @@ ul {
 .navbar.scrolled .contain .brand-name img {
   height: 50px !important;
 }
+.navbar.scrolled .category-drop-list {
+  top: 100% !important;
+}
 .navbar .contain {
   width: 100%;
   padding-bottom: 24px;
@@ -1578,6 +1581,7 @@ ul {
 .navbar .contain .navbar-nav .nav-item {
   -webkit-margin-end: 24px;
           margin-inline-end: 24px;
+  position: relative;
 }
 .navbar .contain .navbar-nav .nav-item:last-child {
   -webkit-margin-end: 0px;
@@ -1589,6 +1593,20 @@ ul {
   color: var(--light-color);
   position: relative;
   z-index: 9;
+}
+.navbar .contain .navbar-nav .nav-item .nav-link.drop-link {
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
+.navbar .contain .navbar-nav .nav-item .nav-link.drop-link::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icons/down_arrow.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  filter: var(--light-filter);
+  left: 0px;
 }
 .navbar .contain .navbar-nav .nav-item .nav-link::after {
   content: "";
@@ -1609,6 +1627,57 @@ ul {
 .navbar .contain .navbar-nav .nav-item .nav-link:hover::after {
   opacity: 1;
   transform: translateY(0px);
+}
+.navbar .contain .navbar-nav .nav-item .drop-list {
+  width: 200px;
+  position: absolute;
+  top: 124%;
+  right: 0;
+  z-index: 99;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  background-color: var(--light-color);
+  padding: 4px 20px;
+}
+.navbar .contain .navbar-nav .nav-item .drop-list li {
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(36, 16, 62, 0.06);
+}
+.navbar .contain .navbar-nav .nav-item .drop-list li a {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 9;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar .contain .navbar-nav .nav-item .drop-list li a::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icons/check.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  right: 0px;
+  filter: var(--secondary-filter);
+}
+.navbar .contain .navbar-nav .nav-item .drop-list li a:hover {
+  color: var(--secondary-color);
+}
+.navbar .contain .navbar-nav .nav-item .drop-list li a:hover::after {
+  -webkit-animation: translateX 0.3s linear infinite;
+          animation: translateX 0.3s linear infinite;
+}
+.navbar .contain .navbar-nav .nav-item:hover .drop-list {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
 }
 .navbar .contain .button-contain {
   display: flex;
@@ -1811,7 +1880,6 @@ ul {
 .navbar .search-box {
   width: 100%;
   height: 60px;
-  position: relative;
   display: flex;
   align-items: center;
   align-content: center;
@@ -4907,6 +4975,7 @@ footer .coprights .techno-logo:hover img {
     position: absolute;
     top: 110px;
     right: -100%;
+    overflow-y: scroll;
     z-index: 99;
     background-color: var(--primary-color);
     flex-direction: column !important;
@@ -4916,10 +4985,17 @@ footer .coprights .techno-logo:hover img {
     padding: 20px 10px;
     transition: all 0.3s linear;
   }
-  .navbar .navbar-nav li {
-    margin-bottom: 20px;
+  .navbar .navbar-nav::-webkit-scrollbar-track {
+    background: transparent !important;
   }
-  .navbar .navbar-nav li a::after {
+  .navbar .navbar-nav .nav-item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    width: 100%;
+  }
+  .navbar .navbar-nav .nav-item .nav-link::after {
     right: 0px;
     left: unset !important;
   }
