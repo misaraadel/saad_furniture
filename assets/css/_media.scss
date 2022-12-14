@@ -1,3 +1,23 @@
+@media (min-width: 1000px) {
+  .navbar {
+    .nav-item {
+      &:hover {
+        .drop-list {
+          transform: translateY(0px) !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+
+        .nav-link {
+          &::before {
+            transform: rotate(180deg) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 999px) {
   .navbar {
     .hamburger {
@@ -62,6 +82,20 @@
           &::after {
             right: 0px;
             left: unset !important;
+          }
+        }
+
+        &.active {
+          .drop-list {
+            transform: translateY(0px) !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+          }
+
+          .nav-link {
+            &::before {
+              transform: rotate(180deg);
+            }
           }
         }
       }

@@ -1607,6 +1607,7 @@ ul {
   top: calc(50% - 12px);
   filter: var(--light-filter);
   left: 0px;
+  transition: all 0.3s linear;
 }
 .navbar .contain .navbar-nav .nav-item .nav-link::after {
   content: "";
@@ -1673,11 +1674,6 @@ ul {
 .navbar .contain .navbar-nav .nav-item .drop-list li a:hover::after {
   -webkit-animation: translateX 0.3s linear infinite;
           animation: translateX 0.3s linear infinite;
-}
-.navbar .contain .navbar-nav .nav-item:hover .drop-list {
-  transform: translateY(0px);
-  opacity: 1;
-  visibility: visible;
 }
 .navbar .contain .button-contain {
   display: flex;
@@ -4948,6 +4944,16 @@ footer .coprights .techno-logo:hover img {
   transform: scale(0.9);
 }
 
+@media (min-width: 1000px) {
+  .navbar .nav-item:hover .drop-list {
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .navbar .nav-item:hover .nav-link::before {
+    transform: rotate(180deg) !important;
+  }
+}
 @media (max-width: 999px) {
   .navbar .hamburger {
     display: block !important;
@@ -4998,6 +5004,14 @@ footer .coprights .techno-logo:hover img {
   .navbar .navbar-nav .nav-item .nav-link::after {
     right: 0px;
     left: unset !important;
+  }
+  .navbar .navbar-nav .nav-item.active .drop-list {
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link::before {
+    transform: rotate(180deg);
   }
   .navbar .navbar-nav.active-nav {
     right: 0px;
