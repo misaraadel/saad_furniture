@@ -1971,18 +1971,6 @@ ul {
   -webkit-animation: translateX 0.3s linear infinite;
           animation: translateX 0.3s linear infinite;
 }
-.navbar .search-box .category:hover .category-contain::after {
-  transform: rotate(180deg);
-}
-.navbar .search-box .category:hover .category-contain img {
-  -webkit-animation: tada 0.3s linear both;
-          animation: tada 0.3s linear both;
-}
-.navbar .search-box .category:hover .category-list {
-  transform: translateY(0px);
-  opacity: 1;
-  visibility: visible;
-}
 .navbar .search-box .form-contain {
   width: calc(100% - 180px);
   height: 100%;
@@ -4953,6 +4941,18 @@ footer .coprights .techno-logo:hover img {
   .navbar .nav-item:hover .nav-link::before {
     transform: rotate(180deg) !important;
   }
+  .navbar .search-box .category:hover .category-contain::after {
+    transform: rotate(180deg);
+  }
+  .navbar .search-box .category:hover .category-contain img {
+    -webkit-animation: tada 0.3s linear both;
+            animation: tada 0.3s linear both;
+  }
+  .navbar .search-box .category:hover .category-list {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 @media (max-width: 999px) {
   .navbar .hamburger {
@@ -5015,6 +5015,18 @@ footer .coprights .techno-logo:hover img {
   }
   .navbar .navbar-nav.active-nav {
     right: 0px;
+  }
+  .navbar .search-box .category.active .category-contain::after {
+    transform: rotate(180deg) !important;
+  }
+  .navbar .search-box .category.active .category-contain img {
+    -webkit-animation: tada 0.3s linear both !important;
+            animation: tada 0.3s linear both !important;
+  }
+  .navbar .search-box .category.active .category-list {
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
   .navbar .search-box .category {
     width: 60px;

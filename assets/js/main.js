@@ -78,6 +78,12 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 
+  $(".category-click").on('click', function(event) {
+    event.preventDefault();
+    
+    $(this).toggleClass("active");
+  });
+
   $(".show-pass").on('click', function(event) {
     event.preventDefault();
     

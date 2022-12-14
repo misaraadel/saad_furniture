@@ -1073,24 +1073,6 @@
           }
         }
       }
-
-      &:hover {
-        .category-contain {
-          &::after {
-            transform: rotate(180deg);
-          }
-
-          img {
-            animation: tada .3s linear both;
-          }
-        }
-
-        .category-list {
-          transform: translateY(0px);
-          opacity: 1;
-          visibility: visible;
-        }
-      }
     }
 
     .form-contain {
