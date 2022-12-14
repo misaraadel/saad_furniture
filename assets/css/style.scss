@@ -123,21 +123,50 @@
       }
     }
   }
+
+  &.bk-opacity-btn {
+    background-color: var(--secondary-color);
+
+    &::after, &::before {
+      width: 0px;
+    }
+
+    img {
+      filter: var(--light-filter);
+    }
+
+    span {
+      color: var(--light-color);
+    }
+
+    &:hover {
+      &::after, &::before {
+        width: 55%;
+      }
+
+      img {
+        filter: var(--light-filter);
+      }
+      
+      span {
+        color: var(--light-color);
+        animation: storm .3s linear;
+      }
+    }
+  } 
 }
 
 .product-box {
   width: 100%;
   position: relative;
   z-index: 9;
-  transform-style: preserve-3d;
-  transition: transform .5s linear;
   background-color: var(--light-color);
+  overflow: hidden;
 
   .front-product {
     width: 100%;
     position: relative;
     z-index: 9;
-    backface-visibility: hidden;
 
     .image-content {
       width: 100%;
@@ -261,8 +290,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
+    transform: translateX(-120%);
+    transition: all .3s linear;
 
     &::after {
       content: '';
@@ -393,14 +422,67 @@
       }
     }
 
-    .custom-btn {
+    .button-contain {
       width: 100%;
-      background-color: var(--primary-color);
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+
+      .custom-btn {
+        width: calc(100% - 50px);
+        outline: 1px solid var(--primary-color) !important;
+      }
+
+      .small-btn {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-color);
+        outline: 1px solid var(--primary-color);
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9;
+
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+          filter: var(--light-filter);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0px;
+          background-color: var(--secondary-color);
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all .3s linear;
+        }
+
+        &:hover {
+          &::after {
+            height: 100%;
+          }
+
+          img {
+            animation: tada .3s linear both;
+          }
+        }
+      }
     }
+   
   }
 
   &:hover {
-    transform: rotateY(180deg);
+    .back-product {
+      transform: translateX(0px);
+    }
   }
 }
 
