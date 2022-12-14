@@ -354,7 +354,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-12 mb-4">
+          <div class="col-lg-4 col-12 mb-4">
             <div class="contain">
               <a href="index.html" class="brand-name">
                 <img src="assets/images/logo/logo.svg" loading="lazy" alt="" />
@@ -394,28 +394,16 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-12 mb-4">
+          <div class="col-lg-4 col-12 mb-4">
             <div class="contain footer-padding">
               <h1>
-                قائمة الموقع
+                خريطة الموقع
               </h1>
 
               <ul class="list">
                 <li>
-                  <a href="index.html">
-                    الرئيسية
-                  </a>
-                </li>
-
-                <li>
                   <a href="products.html">
-                    منتجات مودرن
-                  </a>
-                </li>
-
-                <li>
-                  <a href="products.html">
-                    منتجات كلاسيك
+                    قائمة المنتجات
                   </a>
                 </li>
 
@@ -427,7 +415,7 @@
 
                 <li>
                   <a href="news.html">
-                    المدونة
+                   المدونة
                   </a>
                 </li>
 
@@ -436,11 +424,23 @@
                     تواصل معنا
                   </a>
                 </li>
+
+                <li>
+                  <a href="#" type="button" data-toggle="modal" data-target="#contractModal">
+                    تعاقد تجاري
+                  </a>
+                </li>
+
+                <li>
+                  <a href="policy.html">
+                    الشروط والأحكام
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-12 mb-4">
+          <div class="col-lg-4 col-12 mb-4">
             <div class="contain footer-padding">
               <h1>
                 حسابي
@@ -485,52 +485,6 @@
               </ul>
             </div>
           </div>
-
-          <div class="col-lg-3 col-12 mb-4">
-            <div class="contain footer-padding">
-              <h1>
-                روابط هامة
-              </h1>
-
-              <ul class="list">
-                <li>
-                  <a href="#">
-                    سياسة الخصوصية
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    سياسة الإرجاع
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    الشروط والأحكام
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    طرق الدفع
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    الشحن والتوصيل
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    الحسابات البنكية
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         <div class="coprights">
@@ -548,6 +502,90 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal fade" id="contractModal" tabindex="-1" role="dialog" aria-labelledby="contractModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="contain less-padding">
+              <h1>
+                تعاقد تجاري
+              </h1>
+
+              <p class="sub-title">
+                أرسل تفاصيل شركتك لابرام تعاقد تجاري معنا
+              </p>
+
+              <form action="" class="form-content">
+                <div class="form-group">
+                  <label for="">
+                    اسم الشركة
+                  </label>
+
+                  <input type="text" class="form-control" placeholder="مثال : شركة الرائد المتقدمة" />
+                </div>
+
+                <div class="form-group">
+                  <label for="">
+                    نشاط الشركة
+                  </label>
+                  
+                  <input type="text" class="form-control" placeholder="مثال : الأغذية" />
+                </div>
+
+                <div class="form-group">
+                  <label for="">
+                    عنوان الشركة
+                  </label>
+
+                  <div class="text-area">
+                    <textarea name="" class="form-control" placeholder="تفاصيل العنوان" id="" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">
+                    اسم مسئول التواصل
+                  </label>
+                  
+                  <input type="text" class="form-control" placeholder="مثال : مازن محمود" />
+                </div>
+
+                <div class="form-group">
+                  <label for="">
+                    رقم الموبايل
+                  </label>
+                  
+                  <input type="text" class="form-control" placeholder="مثال : 01002653533" />
+                </div>
+
+                <div class="form-group">
+                  <label for="">
+                    موضوع التعاقد
+                  </label>
+                  
+                  <input type="text" class="form-control" placeholder="ادخل موضوع التعاقد" />
+                </div>
+
+                <div class="button-contain">
+                  <a href="#" class="custom-btn bk-btn">
+                    <span>
+                      ارسال الطلب
+                    </span>
+                  </a>
+  
+                  <a href="#" class="custom-btn border-btn" data-dismiss="modal">
+                    <span>
+                      تراجع
+                    </span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="modal fade" id="orderCancel" tabindex="-1" role="dialog" aria-labelledby="orderCancel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">

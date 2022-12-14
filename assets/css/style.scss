@@ -2092,14 +2092,72 @@ header {
       z-index: -1;
     }
 
-    .contact-info {
+    .contact-shape {
       width: 100%;
-      padding: 0px 40px;
+      padding: 0px 40px 20px;
       background-color: var(--light-color);
       border: 1px solid rgba($color: #BD781E, $alpha: 0.20);
 
+      .social-media {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+  
+        li {
+          margin-inline-end: 10px;
+  
+          &:last-child {
+            margin-inline-end: 0px;
+          }
+  
+          a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            position: relative;
+            z-index: 9;
+            overflow: hidden;
+  
+            &::after {
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 0px;
+              top: 0;
+              left: 0;
+              z-index: -1;
+              background-color: var(--secondary-color);
+              transition: all .3s linear;
+            }
+  
+            img {
+              width: 24px;
+              height: 24px;
+              object-fit: contain;
+            }
+  
+            &:hover {
+              &::after {
+                height: 100%;
+              }
+  
+              img {
+                animation: fadeInLeft .4s linear;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-info {
       li {
-        padding: 35px 0px;
+        padding: 20px 0px;
         border-bottom: 1px solid rgba($color: #BD781E, $alpha: 0.15);
         display: flex;
         justify-content: space-between;
@@ -2131,7 +2189,7 @@ header {
             color: var(--dark-color);
             font-size: 16px;
             font-weight: 500;
-            margin: 20px 0px;
+            margin: 18px 0px;
           }
 
           .link {

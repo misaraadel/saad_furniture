@@ -2868,14 +2868,64 @@ header .swiper-pagination {
   right: 0;
   z-index: -1;
 }
-.contact-us .contact-data .contact-info {
+.contact-us .contact-data .contact-shape {
   width: 100%;
-  padding: 0px 40px;
+  padding: 0px 40px 20px;
   background-color: var(--light-color);
   border: 1px solid rgba(189, 120, 30, 0.2);
 }
+.contact-us .contact-data .contact-shape .social-media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.contact-us .contact-data .contact-shape .social-media li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.contact-us .contact-data .contact-shape .social-media li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.contact-us .contact-data .contact-shape .social-media li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.contact-us .contact-data .contact-shape .social-media li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--secondary-color);
+  transition: all 0.3s linear;
+}
+.contact-us .contact-data .contact-shape .social-media li a img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-us .contact-data .contact-shape .social-media li a:hover::after {
+  height: 100%;
+}
+.contact-us .contact-data .contact-shape .social-media li a:hover img {
+  -webkit-animation: fadeInLeft 0.4s linear;
+          animation: fadeInLeft 0.4s linear;
+}
 .contact-us .contact-data .contact-info li {
-  padding: 35px 0px;
+  padding: 20px 0px;
   border-bottom: 1px solid rgba(189, 120, 30, 0.15);
   display: flex;
   justify-content: space-between;
@@ -2905,7 +2955,7 @@ header .swiper-pagination {
   color: var(--dark-color);
   font-size: 16px;
   font-weight: 500;
-  margin: 20px 0px;
+  margin: 18px 0px;
 }
 .contact-us .contact-data .contact-info li .contain .link {
   font-size: 16px;
