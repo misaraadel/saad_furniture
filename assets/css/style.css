@@ -1042,6 +1042,58 @@ ul {
     z-index: -2;
   }
 }
+html[dir=ltr] .sub-header .contain .breadcrumb-list li::after {
+  left: unset;
+  right: -10px;
+  transform: scaleX(-1);
+}
+html[dir=ltr] .navbar .search-box .category .category-contain::after,
+html[dir=ltr] .navbar .contain .button-contain .profile-popup .custom-btn::after {
+  left: unset;
+  right: 8px;
+}
+html[dir=ltr] footer .contain.footer-padding::after {
+  right: unset;
+  left: 40px;
+}
+html[dir=ltr] .navbar .search-box .category .category-list li a::after,
+html[dir=ltr] .contact-us .contact-data::after,
+html[dir=ltr] .about-us .about-contain .heading::after,
+html[dir=ltr] .about-us .contain .list li::after,
+html[dir=ltr] .about-us .contain .list li::before,
+html[dir=ltr] .news-details .contain .list li::after,
+html[dir=ltr] .news-details .contain .list li::before {
+  left: 0;
+  right: unset;
+}
+html[dir=ltr] .cart-data-product .cart-order-details .data .from-discount .form-group .add-discount {
+  left: unset;
+  right: 0px;
+}
+html[dir=ltr] .form-content .search-box img,
+html[dir=ltr] .navbar .search-box .form-contain img,
+html[dir=ltr] .contact-us .form-contain .form-group img {
+  right: unset;
+  left: 15px;
+}
+html[dir=ltr] .form-content .data-select::after,
+html[dir=ltr] .product-box .back-product .fav-icon,
+html[dir=ltr] .product-box .front-product .image-content .fav-icon,
+html[dir=ltr] .form-content .form-group .form-data .show-pass {
+  right: 20px;
+  left: unset;
+}
+html[dir=ltr] .products .order-box .rate-number {
+  right: 30px;
+  left: unset;
+}
+html[dir=ltr] .single-product .prodcutDetailsThumbsSlider .swiper-button-prev::after {
+  transform: scaleX(-1);
+}
+html[dir=ltr] .single-product .prodcutDetailsThumbsSlider .swiper-button-next::after {
+  transform: rotate(0deg);
+}
+
 :root {
   --primary-color: #262A38;
   --secondary-color: #BD781E;
@@ -2117,7 +2169,7 @@ header .swiper-pagination {
 
 .sub-header {
   width: 100%;
-  padding: 186px 0px 66px;
+  padding: 250px 0px 66px;
   position: relative;
   background-color: var(--primary-color);
   z-index: 9;
@@ -2522,6 +2574,7 @@ header .swiper-pagination {
 }
 .products .swiper-button-prev {
   right: calc(50% - 55px);
+  left: unset !important;
 }
 .products .swiper-button-next {
   left: calc(50% - 55px);
@@ -5341,5 +5394,13 @@ footer .coprights .techno-logo:hover img {
     text-align: center;
     -webkit-margin-end: 0px !important;
             margin-inline-end: 0px !important;
+  }
+  html[dir=ltr] .navbar .navbar-nav {
+    left: -100%;
+    right: unset;
+  }
+  html[dir=ltr] .navbar .navbar-nav.active-nav {
+    left: 0px !important;
+    right: unset;
   }
 }/*# sourceMappingURL=style.css.map */

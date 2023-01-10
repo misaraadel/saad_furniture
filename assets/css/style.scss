@@ -1,6 +1,70 @@
 @import 'global';
 @import 'animations';
 
+html[dir="ltr"] {
+  .sub-header .contain .breadcrumb-list li::after {
+    left: unset;
+    right: -10px;
+    transform: scaleX(-1);
+  }
+
+  .navbar .search-box .category .category-contain::after,
+  .navbar .contain .button-contain .profile-popup .custom-btn::after {
+    left: unset;
+    right: 8px;
+  }
+
+  
+  footer .contain.footer-padding::after {
+    right: unset;
+    left: 40px;
+  }
+
+  .navbar .search-box .category .category-list li a::after,
+  .contact-us .contact-data::after,
+  .about-us .about-contain .heading::after,
+  .about-us .contain .list li::after,
+  .about-us .contain .list li::before,
+  .news-details .contain .list li::after,
+  .news-details .contain .list li::before {
+    left: 0;
+    right: unset;
+  }
+
+  .cart-data-product .cart-order-details .data .from-discount .form-group .add-discount {
+    left: unset;
+    right: 0px;
+  }
+
+  .form-content .search-box img,
+  .navbar .search-box .form-contain img,
+  .contact-us .form-contain .form-group img {
+    right: unset;
+    left: 15px;
+  }
+
+  .form-content .data-select::after,
+  .product-box .back-product .fav-icon,
+  .product-box .front-product .image-content .fav-icon,
+  .form-content .form-group .form-data .show-pass {
+    right: 20px;
+    left: unset;
+  }
+
+  .products .order-box .rate-number {
+    right: 30px;
+    left: unset;
+  }
+
+  .single-product .prodcutDetailsThumbsSlider .swiper-button-prev::after {
+    transform: scaleX(-1);
+  }
+
+  .single-product .prodcutDetailsThumbsSlider .swiper-button-next::after {
+    transform: rotate(0deg);
+  }
+}
+
 :root {
   --primary-color: #262A38;
   --secondary-color: #BD781E;
@@ -1227,7 +1291,7 @@ header {
 
 .sub-header {
   width: 100%;
-  padding: 186px 0px 66px;
+  padding: 250px 0px 66px;
   position: relative;
   background-color: var(--primary-color);
   z-index: 9;
@@ -1696,6 +1760,7 @@ header {
 
   .swiper-button-prev {
     right: calc(50% - 55px);
+    left: unset !important;
   }
 
   .swiper-button-next {

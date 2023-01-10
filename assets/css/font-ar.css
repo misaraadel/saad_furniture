@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "JANNAT";
+  src: url('../fonts/JANNAT/A-JANNAT-LT-BOLD.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "JANNAT";
+  src: url('../fonts/JANNAT/A-JANNAT-LT.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "JANNAT";
+  src: url('../fonts/JANNAT/A-JANNAT-LT-BOLD.woff2');
+  font-weight: 900;
+}
+
+* {
+  font-family: "JANNAT" , sans-serif 
+}

@@ -561,4 +561,16 @@
       margin-inline-end: 0px !important;
     }
   }
+
+  html[dir="ltr"] {
+    .navbar .navbar-nav {
+      left: -100%;
+      right: unset;
+
+      &.active-nav {
+        left: 0px !important;
+        right: unset;
+      }
+    }
+  }
 }
