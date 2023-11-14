@@ -72,7 +72,7 @@ $(document).ready(function () {
     $(this).toggleClass("active");
   });
 
-  $(".drop-list-data").on('click', function(event) {
+  $(".nav-item.drop-list-data .nav-link").on('click', function(event) {
     event.preventDefault();
     
     $(this).toggleClass("active");
